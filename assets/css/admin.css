@@ -1,0 +1,30 @@
+/* Udoy Portfolio Theme - Admin Styles */
+
+.meta-box-content {
+    padding: 12px 0;
+}
+
+.meta-box-content p {
+    margin-bottom: 16px;
+}
+
+.meta-box-content label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.meta-box-content input,
+.meta-box-content textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.meta-box-content input:focus,
+.meta-box-content textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
