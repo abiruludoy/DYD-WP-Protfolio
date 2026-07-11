@@ -83,7 +83,7 @@ function udoy_portfolio_customize_register( $wp_customize ) {
     $wp_customize->add_setting(
         'udoy_hero_first_name',
         array(
-            'default'           => 'Abirul',
+            'default'           => 'Frist Name',
             'sanitize_callback' => 'sanitize_text_field',
         )
     );
@@ -99,7 +99,7 @@ function udoy_portfolio_customize_register( $wp_customize ) {
     $wp_customize->add_setting(
         'udoy_hero_middle_name',
         array(
-            'default'           => 'Islam',
+            'default'           => 'Middle Name',
             'sanitize_callback' => 'sanitize_text_field',
         )
     );
@@ -115,7 +115,7 @@ function udoy_portfolio_customize_register( $wp_customize ) {
     $wp_customize->add_setting(
         'udoy_hero_last_name',
         array(
-            'default'           => 'Udoy',
+            'default'           => 'Last Name',
             'sanitize_callback' => 'sanitize_text_field',
         )
     );
