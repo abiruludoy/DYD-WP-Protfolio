@@ -24,9 +24,9 @@ if ( ! defined( 'ABSPATH' ) ) {
             <!-- Main Heading -->
             <h1 class="hero-title">
                 <?php
-                $first_name = get_theme_mod( 'udoy_hero_first_name', 'Abirul' );
-                $middle_name = get_theme_mod( 'udoy_hero_middle_name', 'Islam' );
-                $last_name = get_theme_mod( 'udoy_hero_last_name', 'Udoy' );
+                $first_name = get_theme_mod( 'udoy_hero_first_name', 'Friest Name' );
+                $middle_name = get_theme_mod( 'udoy_hero_middle_name', 'Middle Name' );
+                $last_name = get_theme_mod( 'udoy_hero_last_name', 'Last Name' );
                 
                 echo 'Hi, I\'m<br>';
                 echo '<span class="highlight">' . esc_html( $first_name . ' ' . $middle_name ) . '</span><br>';
