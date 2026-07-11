@@ -99,11 +99,11 @@ if ( ! defined( 'ABSPATH' ) ) {
         <!-- Right Content - Contact Form -->
         <div class="contact-form-wrapper animate-on-scroll">
             <?php
-            $contact_form_id = absint( get_theme_mod( 'udoy_contact_form_id', 0 ) );
+            $contact_form_id = sanitize_text_field( get_theme_mod( 'udoy_contact_form_id', '' ) );
 
             // Use Contact Form 7 only when a valid form ID is configured.
-            if ( $contact_form_id && shortcode_exists( 'contact-form-7' ) ) {
-                echo do_shortcode( sprintf( '[contact-form-7 id="%d" title="Contact Form"]', $contact_form_id ) );
+            if ( ! empty( $contact_form_id ) && shortcode_exists( 'contact-form-7' ) ) {
+                echo do_shortcode( sprintf( '[contact-form-7 id="%s" title="Contact Form"]', esc_attr( $contact_form_id ) ) );
             } else {
                 ?>
                 <form class="contact-form" id="contact-form-fallback">
